@@ -1,7 +1,6 @@
 #pragma once
-#include<iostream>
-#include<cstdio>
-#include<cstdlib>
+
+#include"config.h"
 using namespace std;
 const int MAXSIZE = 100;
 template<class DataType>
@@ -50,9 +49,10 @@ inline int SeqList<DataType>::Locate(DataType x)
 template<class DataType>
 inline void SeqList<DataType>::Insert(int i, DataType x)
 {
+	int j = 0;
 	if (length >= MAXSIZE)throw "…œ“Á";
 	if (i<1 || i>length + 1)throw "œ¬“Á";
-	for (int j = length; j>i; --j)	
+	for (j = length; j>i; --j)	
 		data[j] = data[j - 1];
 	data[j - 1] = x;
 	length += 1;

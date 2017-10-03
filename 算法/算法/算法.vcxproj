@@ -142,6 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="LinkList.h" />
     <ClInclude Include="SeqList.h" />
   </ItemGroup>
   <ItemGroup>
